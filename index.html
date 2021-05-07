@@ -23,8 +23,11 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" class="alternate-style" title="purple" href="assets/css/purple.css" type="text/css" disabled>
+  <link rel="stylesheet" class="alternate-style" title="skin" href="assets/css/skin.css" type="text/css" disabled>
+  <link rel="stylesheet" class="alternate-style" title="green" href="assets/css/green.css" type="text/css" disabled>
+  <link rel="stylesheet" class="alternate-style" title="brown" href="assets/css/brown.css" type="text/css" disabled>
 </head>
 
 <body>
@@ -37,10 +40,16 @@
     <div class="d-flex flex-column">
       <div class="profile">
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Zeeshan Siddique</a></h1>
-        <p class="text-center text-white-50">Designer & Developer</p>
-      </div>
+        <h1 class="primary">Zeeshan Siddique</h1>
 
+        <div class="style-switcher mt-3">
+          <button class="purple mr-2" title="purple" onclick="setActiveStyle('purple')"></button>
+          <button class="skin mr-2" title="skin" onclick="setActiveStyle('skin')"></button>
+          <button class="green mr-2" title="green" onclick="setActiveStyle('green')"></button>
+          <button class="brown" title="brown" onclick="setActiveStyle('brown')"></button>
+        </div>
+
+      </div>
       <nav class="nav-menu">
         <ul>
           <li class="active"><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
@@ -60,7 +69,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1 class="primary">Zeeshan Siddique</h1>
-      <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer"></span></p>
+      <p>I'm <span class="typed" data-typed-items="Designer, Developer"></span></p>
     </div>
   </section><!-- End Hero -->
 
@@ -422,6 +431,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/styleSwitcher.js"></script>
 
 </body>
 
